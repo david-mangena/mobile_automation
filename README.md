@@ -1,6 +1,6 @@
 # mobile_automation
 
-Appium Modbile Framework
+##Appium Modbile Framework
 A Maven framework in which to build appium tests written in Java.
 
 Getting Started
