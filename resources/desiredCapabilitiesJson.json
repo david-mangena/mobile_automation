@@ -1,0 +1,7 @@
+{
+  "appium": "1.18.3",
+  "platformName": "Android",
+  "automationName": "UiAutomator2",
+  "deviceName": "Android Emulator",
+  "app": "C:\\Users\\dmangena\\Documents\\TAU\\sample-code\\sample-code\\examples\\java\\Windows\\resources\\UAMPMusicPlayerApp.apk"
+}
