@@ -28,5 +28,4 @@ public class RockPlaylistScreen {
     public void viewCurrentPlaySong(){
         mobiledriver.findElement(viewPlaySong).click();
     }
-
 }

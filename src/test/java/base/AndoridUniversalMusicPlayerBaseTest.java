@@ -24,7 +24,6 @@ public class AndoridUniversalMusicPlayerBaseTest
 {
 	protected HomeScreen homeScreen;
 	public static AndroidDriver<?> mobiledriver;
-	private By genres = By.id("com.instantappsample.uamp:id/title");
 
 	@Before
 	public void beforeTest( ) throws MalformedURLException {
@@ -34,16 +33,12 @@ public class AndoridUniversalMusicPlayerBaseTest
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "LMX52JBLVORAMMVGYG");
-		capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\dmangena\\Documents\\TAU\\sample-code\\sample-code\\examples\\java\\Windows\\resources\\UAMPMusicPlayerApp.apk");
+		capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\dmangena\\Documents\\TAU\\Windows\\resources\\UAMPMusicPlayerApp.apk");
 		capabilities.setCapability("newCommandTimeout", 2000);
 		mobiledriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		if (mobiledriver.isLocked()) {
+			mobiledriver.unlockDevice();
+		}
 		homeScreen = new HomeScreen(mobiledriver);
-
 	}
-
-	@After
-	public void afterTest( ) {
-//		mobiledriver.quit();
-	}
-
 }
