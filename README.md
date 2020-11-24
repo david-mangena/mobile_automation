@@ -38,3 +38,5 @@ test
 
 IMPORTANT FILES
 src/main/resources -- This folder contains Android,IOS apps that will be tested locally.
+
+##Test result
