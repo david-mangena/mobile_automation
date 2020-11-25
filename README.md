@@ -26,6 +26,12 @@ Now we can kick up an Appium server, either by running it from the command line 
 appium 
 
 ##Run tests locally
+Ensure Android device is connected to a machine with Appium installed.
+
+Copy and past the desired capabilities in src/main/resources/desiredCapabilitiesJson.json to appium config
+
+Ensure Android device is on Home Screen in case its locked with password.
+
 Right click the feature file and select "Run" or "Debug" to start the tests.
 
 ##Run tests through the commandline
