@@ -32,7 +32,7 @@ Copy and past the desired capabilities in src/main/resources/desiredCapabilities
 
 Ensure Android device is on Home Screen in case its locked with password.
 
-Right click the feature file and select "Run" or "Debug" to start the tests.
+In Editor right click the Test file and select "Run" or "Debug" to start the tests.
 
 ##Run tests through the commandline
 As this project uses Maven, we can invoke the tests using Maven goals.
