@@ -29,14 +29,14 @@ appium
 Ensure Android device is connected to a machine with Appium installed.
 
 Copy and past the desired capabilities in src/main/resources/desiredCapabilitiesJson.json to appium config
-
-{
+**
+**{
   "appium": "1.18.3",
   "platformName": "Android",
   "automationName": "UiAutomator2",
   "deviceName": "Android Emulator",
   "app": "C:\\Users\\Username\\path-to-the-APK\\java\\Windows\\resources\\UAMPMusicPlayerApp.apk"
-}
+}**
 
 Ensure Android device is on Home Screen in case its locked with password.
 
@@ -53,4 +53,3 @@ test
 IMPORTANT FILES
 src/main/resources -- This folder contains Android,IOS apps that will be tested locally.
 
-##Test result
